@@ -14,7 +14,7 @@ grocery_shelf = [
   { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
 ]
 
-find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
+#find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
 
 def item_in_bigarray? (item,array) 
   if find_item_by_name_in_collection(item,array) == nil 
@@ -27,11 +27,19 @@ def add_count_to_cart(cart)
   cart.each do |hash| 
     hash[:count] = 1 
   end 
-  puts cart 
   return cart 
 end 
 
 item_in_bigarray?("CANNED CORN" , grocery_shelf) 
 add_count_to_cart(grocery_shelf)  
 
+def consolidate_cart(cart)
+  final_cart = []
+  cart = add_count_to_cart(cart)
+  cart.each |itemhash| do 
+    if item_in_bigarray?(itemhash[:item],final_cart)  
+      ind = finalcart.index(itemhash) 
+      finalcart.ind[:count] += 1 
+    else final 
+end
 
