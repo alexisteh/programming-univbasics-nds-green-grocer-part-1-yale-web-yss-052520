@@ -1,5 +1,4 @@
 def find_item_by_name_in_collection(name, collection)
-  item = 0
   item = collection.find do |item_hash| 
       item_hash[:item] == name 
   end 
@@ -17,9 +16,15 @@ grocery_shelf = [
 
 find_item_by_name_in_collection("abc", grocery_shelf)
 
-def item_in_hash? (item,hash) 
-  
+def item_in_bighash? (item,hash) 
+  if find_item_by_name_in_collection(item,hash) == nil 
+    puts false
+    return false 
+  else return true 
+  end 
 end 
+
+item_in_bighash? (,hash) 
 
 def consolidate_cart(cart)
   final_hash = {} 
