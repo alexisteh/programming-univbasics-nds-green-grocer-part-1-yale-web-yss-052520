@@ -33,11 +33,4 @@ end
 item_in_bigarray?("CANNED CORN" , grocery_shelf) 
 add_count_to_cart(grocery_shelf)  
 
-def consolidate_cart(cart)
-  final_cart = []
-  cart.each |itemhash| do 
-    if item_in_bigarray?(itemhash[:item],final_cart)  
-      ind = finalcart.index(itemhash) 
-      finalcart.ind[:count] += 1 
-    else final 
-end
+
