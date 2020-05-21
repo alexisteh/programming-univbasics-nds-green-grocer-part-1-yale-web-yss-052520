@@ -18,14 +18,17 @@ find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
 
 def item_in_bigarray? (item,array) 
   if find_item_by_name_in_collection(item,array) == nil 
-    puts false
     return false 
-  else puts true 
+  else return true 
   end 
 end 
 
 item_in_bigarray?("CANNED CORN" , grocery_shelf) 
 
 def consolidate_cart(cart)
-  final_hash = {} 
+  final_cart = []
+  cart.each |itemhash| do 
+    if item_in_bigarray?(itemhash[:item],final_cart)  
+      finalcart[:count] += 1 
+    else final 
 end
