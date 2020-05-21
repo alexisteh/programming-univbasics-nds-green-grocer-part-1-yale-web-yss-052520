@@ -1,4 +1,5 @@
 def find_item_by_name_in_collection(name, collection)
+  item = 0
   item = collection.find do |item_hash| 
       item_hash[:item] = name 
   end 
