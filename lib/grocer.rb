@@ -17,9 +17,14 @@ grocery_shelf = [
 
 find_item_by_name_in_collection("abc", grocery_shelf)
 
+def item_in_hash? (item,hash) 
+  
+end 
+
 def consolidate_cart(cart)
   final_hash = {} 
-  cart.each 
+  cart.each do |hash| 
+    if hash 
 
 end
 
