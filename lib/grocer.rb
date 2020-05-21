@@ -38,8 +38,8 @@ def consolidate_cart(cart)
   cart = add_count_to_cart(cart)
   cart.each do |itemhash| 
     if item_in_bigarray?(itemhash[:item],final_cart)  
-      ind = finalcart.index(itemhash) 
-      finalcart.ind[:count] += 1 
+      ind = final_cart.index(itemhash) 
+      final_cart.ind[:count] += 1 
     else final_cart.push(itemhash) 
     end 
   end 
