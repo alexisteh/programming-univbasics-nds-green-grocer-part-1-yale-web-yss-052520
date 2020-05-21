@@ -24,7 +24,7 @@ def item_in_bigarray? (item,array)
 end 
 
 def add_count_to_cart(cart) 
-  cart.each |hash| do 
+  cart.each do |hash| 
     hash[:count] = 1 
   end 
   return cart 
