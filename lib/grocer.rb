@@ -24,7 +24,7 @@ def item_in_bighash? (item,hash)
   end 
 end 
 
-item_in_bighash? (,hash) 
+item_in_bighash? ("abc",grocery_shelf) 
 
 def consolidate_cart(cart)
   final_hash = {} 
