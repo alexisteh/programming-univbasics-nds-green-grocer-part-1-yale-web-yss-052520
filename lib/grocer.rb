@@ -28,8 +28,4 @@ item_in_bighash?("abc" , grocery_shelf)
 
 def consolidate_cart(cart)
   final_hash = {} 
-  cart.each do |hash| 
 end
-
-
-  
