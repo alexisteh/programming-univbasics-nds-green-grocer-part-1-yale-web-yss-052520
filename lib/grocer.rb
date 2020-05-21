@@ -14,7 +14,7 @@ grocery_shelf = [
   { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
 ]
 
-find_item_by_name_in_collection("CANNED BEANS", grocery_shelf)
+find_item_by_name_in_collection("HOT SAUCE", grocery_shelf)
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
