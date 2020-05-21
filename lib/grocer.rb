@@ -17,7 +17,7 @@ grocery_shelf = [
 find_item_by_name_in_collection("abc", grocery_shelf)
 
 def item_in_bigarray? (item,array) 
-  if find_item_by_name_in_collection(item,hash) == nil 
+  if find_item_by_name_in_collection(item,array) == nil 
     puts false
     return false 
   else puts true 
