@@ -14,7 +14,7 @@ grocery_shelf = [
   { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
 ]
 
-find_item_by_name_in_collection("abc", grocery_shelf)
+find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
 
 def item_in_bigarray? (item,array) 
   if find_item_by_name_in_collection(item,array) == nil 
@@ -24,7 +24,7 @@ def item_in_bigarray? (item,array)
   end 
 end 
 
-item_in_bigarray?("abc" , grocery_shelf) 
+item_in_bigarray?("CANNED CORN" , grocery_shelf) 
 
 def consolidate_cart(cart)
   final_hash = {} 
