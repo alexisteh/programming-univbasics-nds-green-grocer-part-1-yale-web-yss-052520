@@ -42,6 +42,7 @@ def consolidate_cart(cart)
       finalcart.ind[:count] += 1 
     else final_cart.push(itemhash) 
     end 
+  end 
     print final_cart
     return final_cart 
 end
