@@ -27,6 +27,7 @@ def add_count_to_cart(cart)
   cart.each do |hash| 
     hash[:count] = 1 
   end 
+  puts cart 
   return cart 
 end 
 
