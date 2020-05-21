@@ -16,7 +16,7 @@ grocery_shelf = [
 
 find_item_by_name_in_collection("abc", grocery_shelf)
 
-def item_in_bighash? (item,hash) 
+def item_in_bigarray? (item,array) 
   if find_item_by_name_in_collection(item,hash) == nil 
     puts false
     return false 
@@ -24,7 +24,7 @@ def item_in_bighash? (item,hash)
   end 
 end 
 
-item_in_bighash? ("abc",grocery_shelf) 
+item_in_bighash?("abc" , grocery_shelf) 
 
 def consolidate_cart(cart)
   final_hash = {} 
