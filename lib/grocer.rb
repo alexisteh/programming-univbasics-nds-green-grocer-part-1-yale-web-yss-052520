@@ -19,7 +19,7 @@ grocery_shelf = [
 def item_in_bigarray? (item,array) 
   if find_item_by_name_in_collection(item,array) == nil 
     return false 
-  else true
+  else return true
   end 
 end 
 
