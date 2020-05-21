@@ -24,7 +24,7 @@ def item_in_bigarray? (item,array)
   end 
 end 
 
-item_in_bighash?("abc" , grocery_shelf) 
+item_in_bigarray?("abc" , grocery_shelf) 
 
 def consolidate_cart(cart)
   final_hash = {} 
