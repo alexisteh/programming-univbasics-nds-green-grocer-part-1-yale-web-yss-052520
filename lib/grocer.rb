@@ -20,7 +20,7 @@ def item_in_bighash? (item,hash)
   if find_item_by_name_in_collection(item,hash) == nil 
     puts false
     return false 
-  else return true 
+  else puts true 
   end 
 end 
 
